@@ -14,12 +14,12 @@ for (let i = 0; i < randomLetters.length; i++) {
 
 let lettersLeft = randomLetters.length;
 
-while (lettersLeft > 0 && guesses !== 0) {
+while (lettersLeft > 0) {
     alert(answer.join(" "));
 
     alert(guesses)
 
-    let guess = prompt("Please input a single letter").toLowerCase();
+    let guess = prompt("Please input a single letter");
 
     if (guess === null) {
         break;
